@@ -3,6 +3,7 @@
 
 html {
     font-size: 62.5%;
+    height: 100vh;
 }
 
 body {
@@ -10,4 +11,131 @@ body {
     font-size: 1.6rem;
     line-height: 1.5;
     text-rendering: optimizespeed;
+    margin: 0;
+    height: 100vh;
+}
+
+.container {
+    display: flex;
+}
+
+//sidebar
+.sidebar {
+    width: 150px;
+    height: 100vh;
+    background-color: #191718;
+}
+
+.sidebarOptions {
+    margin: 0;
+    padding: 0;
+}
+
+.sidebarItem {
+    width: 150px;
+    height: 44px;
+    font-size: 1.6rem;
+    font-weight: 700;
+    position:relative;
+    overflow:hidden;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    border-bottom: 1px solid #666;
+    color:#5C5C5C;
+    cursor:pointer;
+}
+
+.sidebarItem:hover {
+    background-color: #5C5C5C;
+    color: #fff;
+}
+
+//content
+.content {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    height: 100vh;
+
+    .contentInner {
+       width: 1510px;
+        height: 100vh;
+        position: relative;
+    }
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    img {
+        width: 310px;
+        height: 122px;
+    }
+}
+
+.contentBody {
+    margin-top: 30px;
+
+    .itemStyle1 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: 210px;
+        background: #EFEFEF;
+
+        .title {
+            font-weight: 700;
+            font-size: 1.8rem;
+            line-height: 21px;
+            margin: 38px 0 38px 0;
+        }
+
+        .text {
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 19px;
+            width: 972px;
+            text-align: center;
+        }
+    }
+
+    .itemStyle2 {
+        display: flex;
+        margin-top: 40px;
+        justify-content: space-between;
+
+        .item {
+            width: 470px;
+        }
+        
+        .title2 {
+            font-weight: 700;
+            font-size: 24px;
+            line-height: 28px;
+        }
+
+        .itemBody {
+            margin-top: 18px;
+
+            img {
+                width: 128px;
+                height: 128px;
+                float: left;
+                margin-right: 16px;
+            }
+        }
+    }
+}
+
+.footer {
+    width: 100%;
+    height:79px;
+    position: absolute;
+    bottom:0;
+    display: flex;
+    align-items: center;
 }
